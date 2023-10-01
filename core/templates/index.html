@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %} Home {% endblock %}
+{% block contenido %}
+<a href="{% url 'contact_us' %}">
+<div class="pop-up">
+  <img src="{% static 'core/white-man.jpg' %}" alt="">
+  <p>Can we help you? Text us here!</p>
+</div>
+</a>
+<div class="button-fix">
+  <a href="{% url 'contact_us' %}"><button class="fixed-button"><img src="{% static 'core/chat_566718-white.png' %}" alt="">Text me</button></a>
+</div>
+<div class="videos">
+  <video src="{% static 'core/banner-video-m.mp4' %}" playsinline autoplay muted loop></video>
+  <h1>Performance, Efficiency and Quality</h1>
+</div>
+
+<div class="container-imagenes">
+  <div class="box-with-background" style= "background-image: url('{% static 'core/imgplanos.jpg' %}')">
+      <!-- Contenido del primer contenedor con imagen de fondo -->
+      <h1>Adapt your home to suit your actual needs.</h1>
+  </div>
+  <div class="box">
+      <!-- Contenido del segundo contenedor sin imagen de fondo -->
+      <h1>Feeling discontented with your home? We have a solution
+         for you, whether your current layout isn't functioning well
+          or you simply wish to give it a refresh.
+      </h1>
+  </div>
+</div>
+<div class="videos-2">
+  <h1>Some feedback from our satisfied customers.</h1>
+</div>
+<div class="quotes">
+  <div class="quote">
+    <img src="{% static 'core/quote_pic1.jpg' %}" alt="quote1 bathroom remodeling">
+    <h4>Michael D., Bathroom Remodel</h4>
+    <p>"Starting with their meticulous planning, extending to their material choices,
+       and continuing through their project management and execution, 3LHOME demonstrates
+        unwavering commitment to their promises. They are diligent and consistently 
+         on time, all while maintaining proactive on-site supervision of their skilled
+          craftsmen. Expect regular and proactive communication with you 
+           every stage of your project."</p>
+  </div>
+  <div class="quote">
+    <img src="{% static 'core/quote_pic2.jpg' %}" alt="quote1 kitchen remodeling">
+    <h4>Danna C., Kitchen remodel</h4>
+    <p>"We couldn't be happier with 3LHOME's complete kitchen remodeling.
+       Every aspect of the project was exceptional, from the meticulous planning
+       and design to the construction, materials, finishing touches,
+      project coordination, and cleanup. 3LHOME's approach, grounded in methodical 
+      engineering and architectural principles, set them apart from any other contractor 
+      we considered. As perfectionists when it comes to details, we can confidently say that 
+      our new kitchen is nothing short of flawless!"</p>
+  </div>
+  <div class="quote">
+    <img src="{% static 'core/quote_pic3.jpg' %}" alt="quote1 deck remodeling">
+    <h4>Mathew R., Deck Remodel</h4>
+    <p>"Choosing 3LHOME means you'll experience the complete package. From the initial 
+      stages of your project, they provide invaluable design guidance that aligns with 
+      your vision. As the construction unfolds, you'll witness the flawless execution of 
+      every detail, ensuring your project is brought to life with precision and expertise. 
+      Additionally, their office staff is readily available to address any questions or 
+      assist with any communications, ensuring you have a seamless and well-supported 
+      experience throughout your project."</p>
+  </div>
+</div>
+<div class="our-work">
+  <h1>Our Work</h1>
+  <p>Our established process empowers us to collaborate seamlessly with you, ensuring a hassle-free transformation of your home. Click on the project photos below to explore our services.</p>
+</div>
+<div class="container-works-cards">
+  <div class="card-w" ><img src="{% static 'core/kitchen-realist.jpg' %}" alt="kitchen remodeling"><h1>Kitchens</h1></div>
+  <div class="card-w" ><img src="{% static 'core/kitchen1.jpeg' %}" alt="kitchen remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/kitchen2.jpg' %}" alt="kitchen remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/kitchen3.jpg' %}" alt="kitchen remodeling"><a href="{% url 'services' %}">View Project</a></div>
+
+  <div class="card-w" ><img src="{% static 'core/bath-realist.jpg' %}" alt="bathroom remodeling"><h1>Bathrooms</h1></div>
+  <div class="card-w" ><img src="{% static 'core/bath01.JPG' %}" alt="bathroom remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/bath03.jpg' %}" alt="bathroom remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/bath04.jpg' %}" alt="bathroom remodeling"><a href="{% url 'services' %}">View Project</a></div>
+
+  <div class="card-w"><img src="{% static 'core/deck-realist.jpg' %}" alt="deck remodeling"><h1>Decks</h1></div>
+  <div class="card-w" ><img src="{% static 'core/deck1.jpg' %}" alt="deck remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/deck2.jpg' %}" alt="deck remodeling"><a href="{% url 'services' %}">View Project</a></div>
+  <div class="card-w" ><img src="{% static 'core/deck3.jpg' %}" alt="deck remodeling"><a href="{% url 'services' %}">View Project</a></div>
+</div>
+
+{% endblock  %}

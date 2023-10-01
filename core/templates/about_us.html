@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %} About us {% endblock %}
+{% block contenido %}
+<a href="{% url 'contact_us' %}">
+  <div class="pop-up">
+    <img src="{% static 'core/white-man.jpg' %}" alt="">
+    <p>Can we help you? Text us here!</p>
+  </div>
+</a>
+<div class="button-fix">
+  <a href="{% url 'contact_us' %}"><button class="fixed-button"><img src="{% static 'core/chat_566718-white.png' %}" alt="">Text me</button></a>
+</div>
+<div class="about-us">
+  <div class="about-us-1">
+    <div class="about-us-1-img">
+      <img src="{% static 'core/about_us3.JPG' %}" alt="">
+    </div>
+    <div class="about-us-1-text">
+      <h1>About us:</h1>
+      <p>We are a company that is dedicated to the general remodeling 
+        of houses. doing home improvements. We are dedicated to painting, 
+        remodeling of kitchens, bathrooms, installation of all kinds of ceramics, 
+        we do Deck, wooden floors and much more.
+      </p>
+      <p>
+        We focus on you, quality and keeping you in the know. You can count 
+        to us to deliver a positive remodeling experience and a repeatable 
+        process allow us to reliably complete project on time at the promised 
+        quality level.
+      </p>
+      <p>
+        Maximize results by combining performance, efficiency and quality
+        in each project, satisfying each of the requests and requirements
+        of our customers. using the best materials, tools and trained personnel
+        for each task that will lead us to meet the estimated time in the
+        projects with their specific qualities and characteristics.
+      </p>
+    </div>
+    
+  
+  </div>
+</div>
+<div class="about-us">
+  <div class="about-us-1">
+    <div class="about-us-1-text">
+      <h1>History of the company:</h1>
+      <p>
+        Our beginnings date back to 2010 in the state of Connecticut, 
+        New Haven, where our team came together to offer basic services 
+        to nearby homes, Since then we have never stopped in the effort 
+        and sacrifice to bring the best services in home improvement, 
+        developing techniques and skills that have allowed us to become 
+        a team that is characterized by giving the best in each of the 
+        projects we have done, receiving congratulations and thanks from our customers.
+      </p>
+    </div>
+    
+    <div class="about-us-1-img">
+      <img src="{% static 'core/about_us4.JPG' %}" alt="">
+    </div>
+  
+  </div>
+</div>
+
+{% endblock %}

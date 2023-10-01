@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %} Gallery {% endblock %}
+{% block contenido %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<a href="{% url 'contact_us' %}">
+  <div class="pop-up">
+    <img src="{% static 'core/white-man.jpg' %}" alt="">
+    <p>Can we help you? Text us here!</p>
+  </div>
+</a>
+<div class="button-fix">
+  <a href="{% url 'contact_us' %}"><button class="fixed-button"><img src="{% static 'core/chat_566718-white.png' %}" alt="">Text me</button></a>
+</div>
+<div class="gallery">
+  <div class="gallery-title">
+    <h1>Welcome to our gallery</h1>
+    <p>These are some of the projects that represent us</p>
+  </div>
+  <div class="gallery-controls">
+    <ul class="controls">
+      <li class="buttons" data-filter='all'>All</li>
+      <li class="buttons" data-filter='kitchen'>Kitchens</li>
+      <li class="buttons" data-filter='bath'>Bathrooms</li>
+      <li class="buttons" data-filter='deck'>Decks</li>
+      <li class="buttons" data-filter='paint'>Paintings</li>
+      <li class="buttons" data-filter='floor'>Floors</li>
+    </ul>
+  </div>
+  <div class="image-container">
+    <a href="{% static 'core/bath01.JPG' %}" class="image bath">
+      <img src="{% static 'core/bath01.JPG' %}" alt="bathroom remodeling">
+    </a>
+    <a href="{% static 'core/deck1.jpg' %}" class="image deck">
+      <img src="{% static 'core/deck1.jpg' %}" alt="deck remodeling">
+    </a>
+    <a href="{% static 'core/floor1.jpg' %}" class="image floor">
+      <img src="{% static 'core/floor1.jpg' %}" alt="floor remodeling">
+    </a>
+    <a href="{% static 'core/kitchen1.jpeg' %}" class="image kitchen">
+      <img src="{% static 'core/kitchen1.jpeg' %}" alt="kitchen remodeling">
+    </a>
+    <a href="{% static 'core/paint1.jpg' %}" class="image paint">
+      <img src="{% static 'core/paint1.jpg' %}" alt="painting">
+    </a>
+    <a href="{% static 'core/bath03.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath03.jpg' %}" alt="bathroom remodeling">
+    </a>
+    <a href="{% static 'core/bath04.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath04.jpg' %}" alt="bathroom remodeling">
+    </a>
+    <a href="{% static 'core/deck2.jpg' %}" class="image deck">
+      <img src="{% static 'core/deck2.jpg' %}" alt="deck remodeling">
+    </a>
+    <a href="{% static 'core/deck3.jpg' %}" class="image deck">
+      <img src="{% static 'core/deck3.jpg' %}" alt="deck remodeling">
+    </a>
+    <a href="{% static 'core/floor2.jpg' %}" class="image floor">
+      <img src="{% static 'core/floor2.jpg' %}" alt="floor remodeling">
+    </a>
+    <a href="{% static 'core/floor3.jpg' %}" class="image floor">
+      <img src="{% static 'core/floor3.jpg' %}" alt="floor remodeling">
+    </a>
+    <a href="{% static 'core/kitchen2.jpg' %}" class="image kitchen">
+      <img src="{% static 'core/kitchen2.jpg' %}" alt="kitchen remodeling">
+    </a>
+    <a href="{% static 'core/kitchen3.jpg' %}" class="image kitchen">
+      <img src="{% static 'core/kitchen3.jpg' %}" alt="kitchen remodeling">
+    </a>
+    <a href="{% static 'core/paint2.jpg' %}" class="image paint">
+      <img src="{% static 'core/paint2.jpg' %}" alt="painting">
+    </a>
+    <a href="{% static 'core/paint3.jpg' %}" class="image paint">
+      <img src="{% static 'core/paint3.jpg' %}" alt="painting">
+    </a>    
+    <a href="{% static 'core/paint4.jpg' %}" class="image paint">
+      <img src="{% static 'core/paint4.jpg' %}" alt="painting">
+    </a>
+    <a href="{% static 'core/paint5.jpg' %}" class="image paint">
+      <img src="{% static 'core/paint5.jpg' %}" alt="painting">
+    </a>
+    <a href="{% static 'core/kitchen4.jpg' %}" class="image kitchen">
+      <img src="{% static 'core/kitchen4.jpg' %}" alt="kitchen remodeling">
+    </a>
+    <a href="{% static 'core/floor4.jpg' %}" class="image floor">
+      <img src="{% static 'core/floor4.jpg' %}" alt="floor remodeling">
+    </a>
+    <a href="{% static 'core/floor5.jpg' %}" class="image floor">
+      <img src="{% static 'core/floor5.jpg' %}" alt="floor remodeling">
+    </a>
+    <a href="{% static 'core/deck4.jpg' %}" class="image deck">
+      <img src="{% static 'core/deck4.jpg' %}" alt="deck remodeling">
+    </a>
+    <a href="{% static 'core/deck5.jpg' %}" class="image deck">
+      <img src="{% static 'core/deck5.jpg' %}" alt="deck remodeling">
+    </a>
+    <a href="{% static 'core/bath04.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath04.jpg' %}" alt="bathroom remodeling">
+    </a>    
+    <a href="{% static 'core/bath06.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath06.jpg' %}" alt="bathroom remodeling">
+    </a>
+    <a href="{% static 'core/bath05.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath05.jpg' %}" alt="bathroom remodeling">
+    </a>
+    <a href="{% static 'core/bath07.jpg' %}" class="image bath">
+      <img src="{% static 'core/bath07.jpg' %}" alt="bathroom remodeling">
+    </a>
+  </div>
+</div>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(800);
+        }else{
+            $('.image').not('.'+filter).hide(400);
+            $('.image').filter('.'+filter).show(800);
+        }
+
+    });
+
+    $('.gallery-controls').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+
+
+
+{% endblock %}

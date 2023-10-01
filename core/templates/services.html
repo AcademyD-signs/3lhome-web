@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %} Services {% endblock %}
+{% block contenido %}
+<a href="{% url 'contact_us' %}">
+  <div class="pop-up">
+    <img src="{% static 'core/white-man.jpg' %}" alt="">
+    <p>Can we help you? Text us here!</p>
+  </div>
+</a>
+<div class="button-fix">
+  <a href="{% url 'contact_us' %}"><button class="fixed-button"><img src="{% static 'core/chat_566718-white.png' %}" alt="">Text me</button></a>
+</div>
+<div class="services">
+  <div class="services-title">
+    <h1>Together we are building a better way of working and living...</h1>
+  </div>
+  <div class="kitchen container">
+    <div class="video">
+      <video src="{% static 'core/kitchen-before-after2.mp4' %}" playsinline autoplay muted loop></video>
+    </div>
+    <div class="video-text">
+      <h1>Kitchen Remodeling</h1>
+      <blockquote>Celebrate the heart of your home with the finest 
+         remodeling services in the state. At 3LHOME, we specialize 
+         in turning your kitchen dreams into reality. Our expert team 
+         of designers and craftsmen is dedicated to delivering exceptional 
+         results that not only enhance the aesthetics but also elevate the 
+         functionality of your kitchen space. With a commitment to quality, 
+         attention to detail, and a proven track record of satisfied clients, 
+         we are your trusted partner for creating the kitchen you've 
+          envisioned. Experience the difference of the best kitchen remodeling
+           in the state with 3LHOME.
+      </blockquote>
+    </div>
+  </div>
+  <div class="bath container">
+    <div class="video">
+      <video src="{% static 'core/bath-before-after2.mp4' %}" playsinline autoplay muted loop></video>
+    </div>
+    <div class="video-text">
+      <h1>Bathroom Remodeling</h1>
+      <blockquote>Discover the ultimate in bathroom remodeling excellence 
+        right here in our state. 3LHOME is your premier destination for 
+        transforming your bathroom into a luxurious and functional oasis. 
+        Our team of skilled designers and craftsmen specializes in creating 
+        stunning bathroom renovations that cater to your unique style and needs. 
+        From elegant fixtures to innovative space utilization, we take care of 
+        every detail to ensure your dream bathroom becomes a reality. 
+        With a strong commitment to quality and customer satisfaction, we've 
+        earned a reputation as the top choice for bathroom remodeling in the 
+        state. Experience the pinnacle of bathroom transformation with 3LHOME.
+      </blockquote>
+    </div>
+  </div>
+  <div class="floor container">
+    <div class="video">
+      <video src="{% static 'core/floor-before-after2.mp4' %}" playsinline autoplay muted loop></video>
+    </div>
+    <div class="video-text">
+      <h1>Floor Remodeling</h1>
+      <blockquote>Elevate your living space with the finest floor remodeling 
+        services in our state. 3LHOME is your trusted partner for creating 
+        stunning and durable floors that make a lasting impression. Our skilled 
+        team of experts specializes in floor remodeling projects, offering a 
+        wide range of materials and designs to suit your style and preferences. 
+        Whether you're looking to upgrade your hardwood floors, install elegant 
+        tiles, or explore innovative flooring options, we have you covered. With 
+        a commitment to excellence and attention to detail, we ensure that your 
+        floor remodeling project exceeds your expectations. Experience the highest 
+        quality and craftsmanship in floor remodeling with 3LHOME.
+      </blockquote>
+    </div>
+  </div>
+</div>
+{% endblock  %}

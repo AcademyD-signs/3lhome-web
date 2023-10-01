@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %} Contact us {% endblock %}
+{% block contenido %}
+
+<div class="contact_us">
+  <div class="c-container">
+    <div class="contact-info">
+      <div>
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <a href="https://goo.gl/maps/tiRmWpvKfsEuSErx6"><span><img src="{% static 'core/location_01.png' %}" height= "30" alt=""></span>
+            <span>1363 Quinnipiac avenue unit N<br>
+              New Haven, CT, Connecticut</span></a>
+          </li>
+          <li>
+            <a href="mailto:3lhomeimprovement@gmail.com"><span><img src="{% static 'core/email_01.png' %}" height= "30" alt=""></span>
+            <span>3lhomeimprovement@gmail.com</span></a>
+          </li>
+          <li>
+            <a href="tel:2022765390"><span><img src="{% static 'core/phone-call_01.png' %}" height= "30" alt=""></span>
+            <span>(202)276-5390</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100092396348534"><img src="{% static 'core/fb_icon_01.png' %}" height="50"></a>
+        <a href="https://wa.me/12022765390"><img src="{% static 'core/wtsp_icon_01.png' %}" height="50"></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form id="form">
+      <div class="form-box">
+        <div class="input-box w50">
+          <input type="text" name="from_name" id="from_name" required>
+          <span>First Name</span>
+        </div>
+        <div class="input-box w50">
+          <input type="text" name="from_lastname" id="from_lastname" required>
+          <span>Last Name</span>
+        </div>
+        <div class="input-box w50">
+          <input type="email" name="email_id" id="email_id" required>
+          <span>Email</span>
+        </div>
+        <div class="input-box w50">
+          <input type="text" name="phone_id" id="phone_id">
+          <span>Phone Number</span>
+        </div>
+        <div class="input-box w100">          
+          <textarea required name="message" id="message"></textarea>
+          <span>Write your message here...</span>
+        </div>
+        <div class="input-box w100">          
+          <input type="submit" id="button" value="Send">
+        </div>          
+      </div>
+      </form>
+      <script src="{% static 'core/app.js' %}"></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        emailjs.init('hW9-qU12tZ90xzCxN')
+      </script>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
